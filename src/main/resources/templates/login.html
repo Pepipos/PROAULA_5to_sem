@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesion</title>
+    <link rel="stylesheet" th:href="@{/css/login.css}">
+</head>
+
+<body>
+    <div class="login-container">
+        <form method="post" th:action="@{/loginProcess}" class="login-form">
+
+            <h2 class="login-title">
+                Bienvenido de nuevo</h2>
+
+            <p class="login-subtitle"> A TU RESTAURANTE FAVORITO </p>
+
+            <div class="input-group">
+                <label class="login-label">CORREO ELECTRÓNICO</label>
+                <input type="text" name="correo" class="login-input">
+            </div>
+            <div class="input-group">
+                <label class="login-label">CONTRASEÑA</label>
+                <input type="password" name="contrasena" class="login-input">
+            </div>
+
+            <button type="submit" value="Entrar" class="login-button">INICIAR SESIÓN</button>
+
+            <p> ¿Aun no tienes cuenta? <a href="/" class="login-links">Regístrate aquí</a> </p>
+        </form>
+
+    </div>
+</body>
+
+</html>
